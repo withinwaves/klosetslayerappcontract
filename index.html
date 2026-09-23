@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KlosetSlayer Mobile App Contract</title>
+  <style>
+    :root{--ink:#171717;--paper:#fbfaf7;--gold:#b7924d;--muted:#6b6861;--line:#d8d3c8;--soft:#f1ede4}
+    *{box-sizing:border-box}
+    body{margin:0;background:#ece9e2;color:var(--ink);font:15px/1.5 Inter,Arial,sans-serif}
+    main{max-width:860px;margin:34px auto;background:var(--paper);padding:42px 48px;box-shadow:0 8px 32px #00000018}
+    header{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:24px}
+    .eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    h1{font:700 34px/1.1 Georgia,serif;margin:8px 0 6px}
+    h2{font:700 19px/1.2 Georgia,serif;margin:26px 0 8px}
+    p{margin:0 0 10px}.small{font-size:12px;color:var(--muted)}
+    .summary{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin:18px 0}
+    .summary div{padding:13px;border-right:1px solid var(--line)}.summary div:last-child{border:0}
+    .summary strong{display:block;font-size:18px}.summary span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    ul{margin:8px 0 0;padding-left:20px}li{margin:4px 0}
+    table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:13px}
+    th{background:var(--ink);color:white;text-align:left;padding:9px}td{padding:9px;border:1px solid var(--line)}
+    tbody tr:nth-child(even){background:var(--soft)}td:last-child,th:last-child{text-align:right;white-space:nowrap}
+    .terms{display:grid;grid-template-columns:1fr 1fr;gap:22px}.terms h2{margin-top:18px}
+    form{margin-top:30px;border-top:2px solid var(--ink);padding-top:6px}
+    .notice{background:var(--soft);border-left:4px solid var(--gold);padding:12px 14px;margin:12px 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}.wide{grid-column:1/-1}
+    label{display:block;font-weight:700;font-size:13px;margin-bottom:5px}.required{color:#a44332}
+    input,textarea{width:100%;padding:11px 12px;border:1px solid #999;border-radius:3px;background:white;font:inherit;color:inherit}
+    input:focus,textarea:focus{outline:3px solid #b7924d44;border-color:var(--gold)}
+    textarea{min-height:76px;resize:vertical}.checks{margin:18px 0}.check{display:flex;gap:10px;align-items:flex-start;margin:10px 0;font-weight:500}.check input{width:18px;height:18px;margin-top:2px;flex:0 0 auto}
+    .actions{display:flex;gap:10px;align-items:center;margin-top:18px}.btn{border:0;border-radius:3px;padding:12px 18px;font-weight:800;cursor:pointer}.primary{background:var(--ink);color:white}.secondary{background:var(--soft);color:var(--ink)}
+    .signature{font-family:Georgia,serif;font-size:20px}
+    footer{border-top:1px solid var(--line);margin-top:28px;padding-top:14px;color:var(--muted);font-size:12px}
+    @media(max-width:680px){main{margin:0;padding:24px 18px;box-shadow:none}.summary,.grid,.terms{grid-template-columns:1fr}.summary div{border-right:0;border-bottom:1px solid var(--line)}.summary div:last-child{border-bottom:0}h1{font-size:28px}.actions{align-items:stretch;flex-direction:column}.btn{width:100%}}
+    @media print{body{background:white}main{margin:0;max-width:none;padding:24px;box-shadow:none}.actions,.notice{display:none}input,textarea{border:0;border-bottom:1px solid #777;border-radius:0;padding:5px 0}.terms{display:block}h2{break-after:avoid}table,form{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">KlosetSlayer</div>
+    <h1>Mobile App Development Contract</h1>
+    <p>Developer: David Abrams · 609-314-8005 · davidjordanabrams@gmail.com</p>
+  </header>
+
+  <div class="summary">
+    <div><span>Total price</span><strong>$3,000</strong></div>
+    <div><span>Work allowance</span><strong>60 hours</strong></div>
+    <div><span>Hourly rate</span><strong>$50</strong></div>
+  </div>
+
+  <h2>Project</h2>
+  <p>David Abrams will design, build, test, and deliver a working KlosetSlayer mobile app for iOS and Android. It will recreate the website’s main features in a touch-friendly mobile experience.</p>
+  <ul>
+    <li>Brand history, current story, future plans, and information about creator Marcia.</li>
+    <li>Media, press, publications, magazine articles, campaigns, and approved videos.</li>
+    <li>Brand ambassador profiles with approved social-media links.</li>
+    <li>All store categories, product pages, cart, checkout, and purchasing through the existing commerce system.</li>
+    <li>Mobile navigation, sharing, favorites, social links, and push-notification preparation.</li>
+    <li>Beta testing, bug correction, final build files, basic instructions, and initial app-store submission help.</li>
+  </ul>
+
+  <h2>Six Payment Schedule</h2>
+  <table>
+    <thead><tr><th>Payment</th><th>Due</th><th>Amount</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Contract signed before work begins</td><td>$500</td></tr>
+      <tr><td>2</td><td>App plan and visual direction approved</td><td>$500</td></tr>
+      <tr><td>3</td><td>Brand, creator, media, and press sections completed</td><td>$500</td></tr>
+      <tr><td>4</td><td>Ambassador profiles and store functions completed</td><td>$500</td></tr>
+      <tr><td>5</td><td>Working beta app delivered for testing</td><td>$500</td></tr>
+      <tr><td>6</td><td>Final approval before source files and final handoff</td><td>$500</td></tr>
+      <tr><td colspan="2"><strong>Total</strong></td><td><strong>$3,000</strong></td></tr>
+    </tbody>
+  </table>
+
+  <div class="terms">
+    <section>
+      <h2>Client Responsibilities</h2>
+      <p>KlosetSlayer will provide approved content, product information, account access, store access, and timely feedback. KlosetSlayer remains responsible for inventory, orders, fulfillment, returns, taxes, customer service, content rights, and legal policies.</p>
+      <h2>Reviews and Extra Work</h2>
+      <p>The price includes two design review rounds and one beta correction round. New features or major changes outside this scope require written approval and are billed at $50 per hour unless another price is agreed upon.</p>
+    </section>
+    <section>
+      <h2>Testing and Support</h2>
+      <p>David will test and correct reproducible bugs in the agreed features. The client has 10 business days to report acceptance issues. Covered bugs reported within 30 days after acceptance are corrected without additional labor charges. New features and third-party failures are not covered.</p>
+      <h2>Ownership and Outside Fees</h2>
+      <p>After full payment, KlosetSlayer owns the project-specific design and app files. KlosetSlayer pays app-store, hosting, ecommerce, payment-processing, messaging, paid-software, and other outside fees directly.</p>
+    </section>
+  </div>
+
+  <p><strong>Ending the project:</strong> Either party may end the project in writing. KlosetSlayer must pay for completed work and approved costs. Paid-for work will be provided in its current form. New Jersey law applies.</p>
+
+  <form action="https://formsubmit.co/davidjordanabrams@gmail.com" method="POST" id="contractForm">
+    <input type="hidden" name="_subject" value="Signed KlosetSlayer Mobile App Contract">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_autoresponse" value="Thank you. Your signed KlosetSlayer mobile app contract was submitted to David Abrams.">
+    <textarea name="Complete Agreement Record" id="agreementRecord" hidden></textarea>
+
+    <h2>Required Client Information and Signature</h2>
+    <div class="notice"><strong>Every field marked Required must be completed.</strong> Selecting “Sign and email contract” sends the completed agreement to David Abrams at davidjordanabrams@gmail.com. The first live submission may require David to confirm the form-email connection.</div>
+
+    <div class="grid">
+      <div><label for="company">Client legal name or company <span class="required">Required</span></label><input id="company" name="Client Legal Name" autocomplete="organization" required></div>
+      <div><label for="signer">Authorized signer’s full name <span class="required">Required</span></label><input id="signer" name="Authorized Signer" autocomplete="name" required></div>
+      <div><label for="title">Signer’s title or authority <span class="required">Required</span></label><input id="title" name="Signer Title or Authority" required></div>
+      <div><label for="email">Client email <span class="required">Required</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="phone">Client phone <span class="required">Required</span></label><input id="phone" name="Client Phone" type="tel" autocomplete="tel" required></div>
+      <div><label for="start">Requested project start date <span class="required">Required</span></label><input id="start" name="Requested Start Date" type="date" required></div>
+      <div class="wide"><label for="address">Billing address <span class="required">Required</span></label><textarea id="address" name="Billing Address" autocomplete="street-address" required></textarea></div>
+      <div><label for="signature">Typed electronic signature <span class="required">Required</span></label><input class="signature" id="signature" name="Electronic Signature" required></div>
+      <div><label for="date">Signature date <span class="required">Required</span></label><input id="date" name="Signature Date" type="date" required></div>
+    </div>
+
+    <div class="checks">
+      <label class="check"><input type="checkbox" name="Scope and Price Accepted" value="Yes" required><span>I accept the project scope, $3,000 total price, and six $500 payments. <span class="required">Required</span></span></label>
+      <label class="check"><input type="checkbox" name="Outside Fees Accepted" value="Yes" required><span>I understand that third-party fees are paid separately by KlosetSlayer. <span class="required">Required</span></span></label>
+      <label class="check"><input type="checkbox" name="Electronic Signature Consent" value="Yes" required><span>I intend my typed name to serve as my electronic signature and confirm that I am authorized to sign for the client. <span class="required">Required</span></span></label>
+    </div>
+
+    <div class="actions">
+      <button class="btn primary" type="submit">Sign and email contract</button>
+      <button class="btn secondary" type="button" onclick="window.print()">Print or save PDF</button>
+      <span class="small">Submission uses FormSubmit to deliver the completed fields by email.</span>
+    </div>
+  </form>
+
+  <footer>David Abrams · Medford, New Jersey · 609-314-8005 · davidjordanabrams@gmail.com</footer>
+</main>
+<script>
+  const form=document.getElementById('contractForm');
+  const signature=document.getElementById('signature');
+  const signer=document.getElementById('signer');
+  const date=document.getElementById('date');
+  date.value=new Date().toISOString().slice(0,10);
+  signer.addEventListener('input',()=>{if(!signature.dataset.edited)signature.value=signer.value});
+  signature.addEventListener('input',()=>signature.dataset.edited='true');
+  form.addEventListener('submit',()=>{
+    const values=new FormData(form);
+    const record=[
+      'KLOSETSLAYER MOBILE APP DEVELOPMENT CONTRACT',
+      'Developer: David Abrams',
+      'Total: $3,000 — six payments of $500',
+      'Scope: iOS/Android app; brand, creator, media, press, ambassadors, ecommerce, mobile extras, testing, and launch assistance.',
+      '',
+      'Client: '+values.get('Client Legal Name'),
+      'Authorized signer: '+values.get('Authorized Signer'),
+      'Title/authority: '+values.get('Signer Title or Authority'),
+      'Electronic signature: '+values.get('Electronic Signature'),
+      'Signature date: '+values.get('Signature Date'),
+      'Accepted electronically: Yes'
+    ];
+    document.getElementById('agreementRecord').value=record.join('
+');
+  });
+</script>
+</body>
+</html>
